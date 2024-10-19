@@ -20,12 +20,7 @@ def is_enabled(value, default):
     elif value.lower() in ["false", "no", "0", "disable", "n"]:
         return False
     else:
-        return default
-   api_id_value = environ.get('API_ID')
-   if api_id_value is None or api_id_value == '':
-       raise ValueError("API_ID environment variable must be set.")
-   API_ID = int(api_id_value)
-   
+        return default  
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
