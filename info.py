@@ -26,7 +26,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '20870885'))  
 API_HASH = environ.get('API_HASH', 'a7e1280d30225e7aa036d57a0c9bb929')
-OWNER_ID = environ.get('OWNER_ID',1114789110)
+OWNER_ID = environ.get('OWNER_ID',7170452349)
 BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 # Bot settings
@@ -53,7 +53,7 @@ PREFIX = environ.get("PREFIX", "/")
 CHAT_GROUP = int(environ.get("CHAT_GROUP", "-1002235094272"))
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1114789110 7170452349').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7170452349').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002194109031').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
